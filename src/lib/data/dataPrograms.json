@@ -1,0 +1,50 @@
+{
+    "0": {
+        "id": 0,
+        "name": "Tango Porteño Show with Optional: Dinner and Tango Class",
+        "duration": 4,
+        "offeredIn": ["spanish","english"],
+        "overview": "Experience the passion of an authentic Argentine tango with a spectacular evening show at the glamorous Tango Porteño, including hotel transfers. First, put on your dancing shoes for a tango class and learn some of the famous steps. Then, if you've opted to, enjoy a delicious gourmet meal accompanied by a variety of wines. Finally, prepare to be dazzled as the world-class dancers take to the stage, dressed in elaborate costumes and accompanied by a live band, evoking the magic of the golden era of tango.",
+        "overviewTags": [
+            "Take part in a traditional Argentine Tango class at Tango Porteño",
+            "Enjoy a live show featuring over 40 artists and musicians",
+            "Opt to include a gourmet meal of Argentine steak, a variety of wines, and dessert",
+            "Round-trip hotel transfers included for an added convenience"
+        ],
+        "included": [
+            "Tango Class",
+            "Tango Show",
+            "Three-course dinner",
+            "Soft Drinks or wine"
+        ],
+        "notIncluded": [
+            "Gratuities",
+            "Hotel pickup and drop-off"
+        ],
+        "realLink": "https://www.viator.com/es-AR/tours/Buenos-Aires/Tango-Porteo-Tango-Show-with-Optional-Dinner-and-Tango-Class-in-Buenos-Aires/d901-5674P91"
+    },
+
+    "1": {
+        "id": 1,
+        "name": "Private Tango Lesson",
+        "duration": 1,
+        "offeredIn": ["spanish","english"],
+        "overview": "For timid beginners wanting to learn tango basics in a low-pressure environment or advanced dancers looking to improve their moves, a private tango lesson in Buenos Aires is a great way to meet your needs. Learn tango steps from a professional instructor who meets you at whatever level you need, plus get a local perspective on the importance of tango dance to Argentinian culture as you dance.",
+        "overviewTags": [
+            "Private tango lesson in Buenos Aires",
+            "Learn basic to advanced tango steps away from the crowds",
+            "Great for all levels",
+            "Private tour for just your group"
+        ],
+        "included": [
+            "Local taxes",
+            "Private tango teacher",
+            "Dance studio"
+        ],
+        "notIncluded": [
+            "Gratuities",
+            "Hotel pickup and drop-off"
+        ],
+        "realLink": "https://www.viator.com/tours/Buenos-Aires/Private-Tango-lesson/d901-68122P3"
+    }
+}

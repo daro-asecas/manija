@@ -1,0 +1,45 @@
+{
+    "home": {
+        "name": "home",
+        "title": "La Manija Tango Club",
+        "subtitle": "El que la agarra la agarra",
+        "imgURL": "/src/lib/img/index.jpg",
+        "alt": "El tango, baile social"
+
+    },
+    "us": {
+        "name": "us",
+        "title": "About Us",
+        "text": [
+            "La Manija se inicio en 2022 como un grupo de amigos, amantes del tango, con ganas de llevar la experiencia de los primeros pasos en el baile a la mayor cantidad de personas posible.",
+            "Con años escuchando y bailando tango, y tambíen conociendo diferentes milongas, clases, profesores, fuimos dandole forma a nuestra idea de acercamiento al tango como baile social.",
+            "Vivimos esta música con orgullo, como parte de nuestra identidad. Y es por eso que tratamos de difundirla y transmitira a personas de otras partes del mundo, para que puedan experimentar este baile desde adentro."
+        ],
+        "imgURL": "/src/lib/img/us.jpg",
+        "alt": "El tango, baile social"
+    },
+    "history": {
+        "name": "history",
+        "title": "History",
+        "text": "",
+        "imgURL": "/src/lib/img/exhibicion.jpg",
+        "alt": "El tango, baile social"
+    },
+    "programs": {
+        "name": "programs",
+        "title": "Programs",
+        "text": "",
+        "imgURL": "/src/lib/img/exhibicion4.jpg",
+        "alt": ""
+    },
+    "contact": {
+        "name": "contact",
+        "title": "Contact Us",
+        "mail": "contacto@manijatangoclub.com.ar",
+        "phone": "542944229002",
+        "whatsappMessage": {
+            "es": "Hola! Les escribo para conocer más sobre las propuestas de Tango",
+            "en": "Hi! I want to know more about Tango experiences"
+        }
+    }
+}

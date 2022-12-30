@@ -1,0 +1,11 @@
+{
+    "titles": ["us", "history", "programs", "contact"],
+    "contact": {
+        "mail": "contacto@manijatangoclub.com.ar",
+        "phone": "542944229002",
+        "whatsappMessage": {
+            "es": "Hola! Les escribo para conocer más sobre las propuestas de Tango",
+            "en": "Hi! I want to know more about Tango experiences"
+        }
+    }
+}

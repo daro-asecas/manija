@@ -1,0 +1,64 @@
+/*//////////////////// Normalization ////////////////////*/
+
+* {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+
+
+/*//////////////////// Variables ////////////////////*/
+
+:root {
+    --max-width: unset;
+
+	--font-family: Nunito, system-ui, sans-serif;
+	--font-family-large: "Source Sans Pro", system-ui, sans-serif;
+
+	--base-color: 52,50%,73%;
+
+    --font-color-hsl: var(--base-color);
+    --font-color: hsl(var(--font-color-hsl));
+
+	--background-color: var(--base-color);
+
+	--bar-color: 20,67%,33%;
+	--bar-gradient: linear-gradient(hsl(52,65%,50%) 0%,
+									hsl(52,85%,65%) 35%,
+									hsl(52,95%,65%) 60%,
+									hsl(52,75%,30%) 100%);
+
+	--bg-rgb: 43, 43, 43;
+	--bg: rgba(var(--bg-rgb), 1);
+
+	--color-rgb: 255, 255, 255;
+	--color: rgba(var(--color-rgb), 1);
+
+	--pc-hsl: var(--base-color);
+	--pc: hsla(var(--pc-hsl), 1);
+
+	--light-rgb: 201, 56, 29;
+	--light: rgba(var(--light-rgb), 1);
+
+	--dark-selector: hsl(52,88%,38%);
+	--dark-hsl: 52,88%,38%;
+	--dark: rgba(var(--dark-hsl), 1);
+
+	--height-footer: 3.7rem;
+}
+
+
+
+/*//////////////////// Styles ////////////////////*/
+
+body {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    color: var(--font-color);
+    background-color: #111;
+}
