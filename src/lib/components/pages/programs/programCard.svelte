@@ -5,7 +5,7 @@
 
     export let programData
 
-    let imageFolder = "/src/lib/img/programs/"
+    let imageFolder = "/img/programs/"
 
 </script>
 

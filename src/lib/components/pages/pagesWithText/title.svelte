@@ -5,7 +5,7 @@
     let scroll, isScrolled, titleScroll
     $: isScrolled = !scroll==0
     $: backgroundScroll = scrollFX?-scroll*2:-scroll*0.25
-    $: titleScroll = scrollFX?(scroll<=0?0:150):0
+    $: titleScroll = scrollFX?(scroll<=0?0:43):0
 
     function handleWheel(e) {
         if (scrollFX && (scroll + e.deltaY<1) ) {
@@ -20,7 +20,7 @@
 
 <style>
     * {
-        transition: all 400ms ease;
+        transition: all 500ms ease;
     }
 
     #title-screen {
@@ -32,7 +32,8 @@
     }
 
     #title-screen.scrolled {
-        height: 0rem;
+        /* height: 0rem; */
+        margin-top: -100vh;
     }
 
     #background {
@@ -51,7 +52,7 @@
 
     #title {
         position: absolute;
-        top: 40%;
+        top: 18rem;
         width: 100%;
         z-index: 888;
     }
@@ -92,13 +93,13 @@
 
 <div id="title-screen" class:scrolled={isScrolled&&scrollFX}>
 
-    <img id="background" class:noScrollFX={!scrollFX} src="{data.imgURL}" alt={data.alt} style:transform="translate3d(-50%,{backgroundScroll}px,0"> <!-- /0.18/ -->
+    <img id="background" class:noScrollFX={!scrollFX} src="{data.imgURL}" alt={data.alt} > <!-- style:transform="translate3d(-50%,{backgroundScroll}px,0"> --> <!-- /0.18/ -->
     
-    <div id="title" style:transform="translateY({titleScroll}px)" class:wrap={!scrollFX}> <!-- /0.583/ /0.08/ -->
+    <div id="title" style:transform="translateY({titleScroll}rem)" class:wrap={!scrollFX}> <!-- /0.583/ /0.08/ -->
         <h1>{data.title}</h1>
         {#if data.subtitle}
-            <h3>{data.subtitle}</h3>
+        <h3>{data.subtitle}</h3>
         {/if}
     </div>
-
+    
 </div>

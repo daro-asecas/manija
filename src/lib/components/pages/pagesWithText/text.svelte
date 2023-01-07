@@ -10,7 +10,6 @@
 
     #text {
         width: 100%;
-        padding-top: 1rem;
     }
 
     p {

@@ -7,7 +7,7 @@
 
 <div id="text-page">
     <Title data={data} />
-    <Content data={data}>
+    <Content>
         <Text data={data} />
     </Content>
 </div>

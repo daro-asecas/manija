@@ -1,5 +1,5 @@
 <script>
-    import logo from '$lib/img/icons/MTC 0deg.png';
+    // import logo from '/img/icons/MTC 0deg.png';
 
     import current from '$lib/data/storeCurrent.js'
     current.subscribe((value) => {})
@@ -140,7 +140,7 @@
     <div class="bar">
 
         <div>
-            <img src={logo} alt="Logo" id="logo">
+            <img src='/img/icons/MTC 0deg.png' alt="Logo" id="logo">
         </div>
 
         <div id="buttons">

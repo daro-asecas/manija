@@ -1,7 +1,7 @@
 <script>
     export let id
 
-    let imageFolder = `/src/lib/img/programs/${id}`
+    let imageFolder = `/img/programs/${id}`
     let imageName = 0
     let numberOfImages = 4
     $: if (imageName===numberOfImages) { imageName = 0
