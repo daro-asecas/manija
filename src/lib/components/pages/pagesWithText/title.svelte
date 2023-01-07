@@ -5,7 +5,7 @@
     let scroll, isScrolled, titleScroll
     $: isScrolled = !scroll==0
     $: backgroundScroll = scrollFX?-scroll*2:-scroll*0.25
-    $: titleScroll = scrollFX?(scroll<=0?0:43):0
+    $: titleScroll = scrollFX?(scroll<=0?0:48):0
 
     function handleWheel(e) {
         if (scrollFX && (scroll + e.deltaY<1) ) {
