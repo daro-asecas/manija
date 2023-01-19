@@ -1,7 +1,4 @@
 <script>
-    import { each } from "svelte/internal";
-
-
     export let data
     
 </script>
@@ -10,6 +7,7 @@
 
     #text {
         width: 100%;
+        margin-top: 7rem;
     }
 
     p {
@@ -24,7 +22,6 @@
                     -1px -1px 1px hsl(52 50% 33% / 33%)
                     ;
     }
-
 
 </style>
 

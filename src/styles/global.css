@@ -61,4 +61,5 @@ body {
     margin: 0 auto;
     color: var(--font-color);
     background-color: #111;
+	background: linear-gradient(to bottom, #111 8%, #212020 9%, #111 35%);
 }

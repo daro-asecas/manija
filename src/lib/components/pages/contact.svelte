@@ -101,8 +101,15 @@
 
 
 <style>
-    .contact-data {
-        margin: 7rem auto 1rem;
+    #contact-page {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding-top: 7rem;
+    }
+    
+    #contact-data {
+        margin: 0 auto 1rem;
         /* text-align: center; */
         display: flex;
         flex-direction: column;
@@ -132,7 +139,7 @@
         font-weight: bold;
     }
 
-    .contact-form {
+    #contact-form {
         width: 800px;
         max-width: 80%;
         border-top: hsla(var(--background-color),1) 4px solid;
@@ -155,29 +162,32 @@
     }
 </style>
 
+<div id="contact-page">
 
-<div class="contact-data">
-    <h2 class="page-title">Contactanos</h2>
-    <a class="contact-item" href="mailto:{data.mail}"><Mail />{data.mail}</a>
-    <!-- <a class="na" href="tel:{data.phone}"><Phone />+{data.phone}</a> -->
-    <a class="contact-item" href="https://wa.me/{data.phone}?text={encodeURIComponent(data.whatsappMessage[lang])}"><WhatsApp />+{data.phone}</a>
-</div>  
+    <div id="contact-data">
+        <h2 class="page-title">Contactanos</h2>
+        <a class="contact-item" href="mailto:{data.mail}"><Mail />{data.mail}</a>
+        <!-- <a class="na" href="tel:{data.phone}"><Phone />+{data.phone}</a> -->
+        <a class="contact-item" href="https://wa.me/{data.phone}?text={encodeURIComponent(data.whatsappMessage[lang])}"><WhatsApp />+{data.phone}</a>
+    </div>  
 
-<form class="contact-form" on:submit|preventDefault={submit} method="post" action="/contacto">
-    <div class="field">
-        <TextField label="Nombre" bind:value={name} name="name"/>
-    </div>
-    <div class="field">
-        <TextField label="Mail" name="mail" bind:value={mail} type="email"/>
-    </div>
-    <div class="field">
-        <TextField label="Teléfono" name="phone" bind:value={phone} type="phone"/>
-    </div>
-    <div class="field">
-        <TextField label="Mensaje" name="message" bind:value={message} multiline minrows={4}/>
-    </div>
+    <form id="contact-form" on:submit|preventDefault={submit} method="post" action="/contacto">
+        <div class="field">
+            <TextField label="Nombre" bind:value={name} name="name"/>
+        </div>
+        <div class="field">
+            <TextField label="Mail" name="mail" bind:value={mail} type="email"/>
+        </div>
+        <div class="field">
+            <TextField label="Teléfono" name="phone" bind:value={phone} type="phone"/>
+        </div>
+        <div class="field">
+            <TextField label="Mensaje" name="message" bind:value={message} multiline minrows={4}/>
+        </div>
 
-    <div class="send">
-        <Pb>Enviar</Pb>
-    </div>
-</form>
+        <div class="send">
+            <Pb>Enviar</Pb>
+        </div>
+    </form>
+
+</div>

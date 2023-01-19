@@ -10,7 +10,7 @@ input, textarea {
   outline: none;
   flex: 1;
   margin: 0;
-  border: 1px hsla(var(--pc-hsl),0.23) solid;
+  border: 1px hsla(var(--pc-hsl),0.40) solid;
   border-radius: 3px;
   padding: 0.9em 0.75em;
   width: 100%;
@@ -26,7 +26,7 @@ textarea {
 }
 
 input:disabled, textarea:disabled {
-  color: hsla(var(--font-color-hsl),0.35);
+  color: hsla(var(--font-color-hsl),0.65);
 }
 
 input:focus, textarea:focus {

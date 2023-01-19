@@ -1,64 +1,27 @@
 <script>
     export let data
-    export let scrollFX = true
 
     let scroll, isScrolled, titleScroll
     $: isScrolled = !scroll==0
-    $: backgroundScroll = scrollFX?-scroll*2:-scroll*0.25
-    $: titleScroll = scrollFX?(scroll<=0?0:48):0
-
-    function handleWheel(e) {
-        if (scrollFX && (scroll + e.deltaY<1) ) {
-            scroll = 0
-        }
-        // } else if (scroll<100) {
-        //     e.deltaY = 1
-        // }
-    }
+    // $: titleScroll = scroll<=0?0:48
 
 </script>
 
 <style>
     * {
-        transition: all 500ms ease;
-    }
-
-    #title-screen {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-
-        /* scroll-snap-align: end; */
-    }
-
-    #title-screen.scrolled {
-        /* height: 0rem; */
-        margin-top: -100vh;
-    }
-
-    #background {
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        min-width: 150vh;
-        height: 100vh;
-        z-index: -1;
+        transition: all 600ms ease;
     }
     
-    #background.noScrollFX {
-        transition: 0ms;
-    }
-
     #title {
-        position: absolute;
-        top: 18rem;
+        position: relative;
+        bottom: -5rem;
         width: 100%;
         z-index: 888;
     }
 
-    #title.wrap h1 {
-        white-space:normal ;
+    #title.notScrolled {
+        bottom: 79vh;
+        transition: all 500ms ease;
     }
 
     h1 {
@@ -88,18 +51,11 @@
 
 </style>
 
-<svelte:window bind:scrollY={scroll}
-               on:wheel={handleWheel} />
+<svelte:window bind:scrollY={scroll}/>
 
-<div id="title-screen" class:scrolled={isScrolled&&scrollFX}>
-
-    <img id="background" class:noScrollFX={!scrollFX} src="{data.imgURL}" alt={data.alt} > <!-- style:transform="translate3d(-50%,{backgroundScroll}px,0"> --> <!-- /0.18/ -->
-    
-    <div id="title" style:transform="translateY({titleScroll}rem)" class:wrap={!scrollFX}> <!-- /0.583/ /0.08/ -->
-        <h1>{data.title}</h1>
-        {#if data.subtitle}
-        <h3>{data.subtitle}</h3>
-        {/if}
-    </div>
-    
+<div id="title" class:notScrolled={!isScrolled} > <!-- style:transform="translateY({titleScroll}rem)">  --> <!-- /0.583/ /0.08/ -->
+    <h1>{data.title}</h1>
+    {#if data.subtitle}
+    <h3>{data.subtitle}</h3>
+    {/if}
 </div>
