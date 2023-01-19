@@ -1,6 +1,8 @@
 <script>
     export let data
 
+    let programs = data.name==="programs"
+
     let scroll, isScrolled, windowHeight
     $: isScrolled = !scroll==0
     // $: backgroundScroll = -scroll*2
@@ -48,12 +50,18 @@
 
     #background {
         position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 58%;
+        transform: translateX(-58%);
         width: 100%;
         min-width: 150vh;
         height: 100vh;
         z-index: -1;
+    }
+
+    #background.programs {
+        left: unset;
+        right: 14%;
+        transform: translateX(14%);
     }
     
 </style>
@@ -63,7 +71,5 @@
                on:wheel|passive={handleWheel}/>
 
 <div id="title-screen" class:scrolled={isScrolled}>
-
-    <img id="background" src="{data.imgURL}" alt={data.alt} > <!-- style:transform="translate3d(-50%,{backgroundScroll}px,0"> --> <!-- /0.18/ -->
-
+    <img id="background" src="{data.imgURL}" alt={data.alt} class:programs > <!-- style:transform="translate3d(-50%,{backgroundScroll}px,0"> --> <!-- /0.18/ -->
 </div>
